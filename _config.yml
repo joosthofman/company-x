@@ -98,32 +98,16 @@ author:
   bio              : "Food & Tech"
   location         : "Netherlands"
   email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "stack overflow"
-      icon: "fab fa-fw fa-stack-overflow"
-      url: "https://stackoverflow.com/jobs/companies/company-x"
 
 # Site Footer
 footer:
   links:
-    - label: "Email"
-      icon: "fab fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
+    - label: "ah.nl"
       icon: "fab fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://www.ah.nl"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/albert-heijn"
     - label: "stack overflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/jobs/companies/company-x"
@@ -251,8 +235,27 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
-      comments: # true
+      comments: false
       share: true
       related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
